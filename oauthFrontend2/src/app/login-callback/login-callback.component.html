@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <h1>Lucknow</h1>
+    </div>
+    <div class="navbar-right">
+      <div class="user-info">
+        <img [src]="User.image" alt="User Avatar" class="user-avatar">
+        <span class="username">{{User.name}}</span>
+      </div>
+    </div>
+  </nav>
+  
+
+  
+  
+  
+  <div class="container">
+  <h1 class="heading">Best Places to Visit in Lucknow</h1>
+  <p class="intro">Explore the rich heritage and beauty of Lucknow, a city known for its history, culture, and stunning architecture.</p>
+
+  <div class="places-container">
+    <div class="place-card" *ngFor="let place of places">
+      <img [src]="place.image"  class="place-image">
+      <div class="place-info">
+        <h3>{{ place.name }}</h3>
+        <p>{{ place.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+</body>
+</html>
+
